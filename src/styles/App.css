@@ -1,0 +1,64 @@
+#root{
+  margin-top: 10px;
+}
+
+.header{
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.routes{
+  font-size: 1.5em;
+  transition: transform .5s ease;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.routes:hover{
+  color: black;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.title{
+  font-size: 2em;
+  border-bottom: 2px solid lightgray;
+}
+
+label {
+  min-width: 100px;
+  width: 5%;
+  margin-bottom: 0px !important;
+}
+
+.imgPreview{
+  max-width: 200px;
+  height: auto;
+  animation: fadeIn ease 3s;
+}
+
+.preview{
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.table-cards{
+  min-width: 350px;
+  width: 25vw;
+}
+
+@keyframes fadeIn {
+  0%{ 
+    transform: translateX(-30px); 
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0); 
+
+    opacity: 1;
+  }
+}
