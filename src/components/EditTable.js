@@ -29,7 +29,7 @@ function EditTable(props) {
         rows.forEach(row => {
             tbody.push(<tr key={ind}>
                 <td> 
-                    <input type="checkbox" name="rows" className="form-check" /> 
+                    <input type="checkbox" name="rows" autocomplete="off" className="form-check" /> 
                 </td>
                 {row.map(element => 
                     <td key={element}>{element}</td>)
@@ -56,6 +56,7 @@ function EditTable(props) {
             if( !checkboxes[i].checked ){
                 newRows.push(data.tableData.rows[i]);
             }
+            checkboxes[i].checked = 0;
         }
 
         console.log(newRows);
